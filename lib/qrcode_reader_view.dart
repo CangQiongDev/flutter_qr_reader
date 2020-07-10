@@ -60,7 +60,7 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
   void _init() async {
     await Future.delayed(Duration(microseconds: 200));
     _initAnimation();
-    final ByteData data = await rootBundle.load('assets/scan_blue.png');
+    final ByteData data = await rootBundle.load('packages/flutter_qr_reader/assets/scan_blue.png');
     _image = await loadImage(new Uint8List.view(data.buffer));
   }
 
